@@ -16,6 +16,10 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "BRD Facilities | Entrega Técnica Premium",
   description: "Padrão técnico de limpeza para liberação imediata e sem retrabalho.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
