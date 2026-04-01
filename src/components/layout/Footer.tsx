@@ -1,0 +1,22 @@
+import Image from "next/image";
+
+export function Footer() {
+  return (
+    <footer className="bg-surface border-t border-border-dark py-10">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="relative h-7 w-20 opacity-70">
+          <Image
+            src="/logo.png"
+            alt="BRD Facilities"
+            fill
+            className="object-contain object-left"
+          />
+        </div>
+        <p className="text-text-secondary text-sm text-center">
+          © {new Date().getFullYear()} BRD Facilities. Todos os direitos reservados.
+        </p>
+        <p className="text-text-secondary text-xs">Padrão técnico de excelência.</p>
+      </div>
+    </footer>
+  );
+}
