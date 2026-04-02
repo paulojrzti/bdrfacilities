@@ -32,7 +32,7 @@ export function AuthoritySection() {
               transition={{ delay: idx * 0.15, duration: 0.7 }}
               className="group flex-1 flex flex-col items-center gap-4 px-8 py-4"
             >
-              <div className="relative w-full h-36 rounded-xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+              <div className="relative w-full h-56 rounded-xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
                 <Image
                   src={client.img}
                   alt={client.name}

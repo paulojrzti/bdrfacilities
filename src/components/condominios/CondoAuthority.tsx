@@ -42,7 +42,7 @@ export function CondoAuthority() {
                 transition={{ delay: 0.15 * i, duration: 0.7 }}
                 className="group relative rounded-2xl overflow-hidden border border-border-dark hover:border-gold/30 transition-all duration-500"
               >
-                <div className="relative h-48 w-full">
+                <div className="relative h-72 w-full">
                   <Image
                     src={client.img}
                     alt={client.name}
