@@ -68,9 +68,10 @@ export function HeroSection() {
             <Button size="lg" href="#orcamento">
               Solicitar orçamento
             </Button>
-            <Button size="lg" variant="outline" href="#processo">
-              Ver metodologia
-            </Button>
+            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-gold/20 bg-gold/5">
+              <span className="text-gold font-heading font-bold text-xl">+240</span>
+              <span className="text-text-secondary text-sm leading-snug">clientes<br className="sm:hidden" /> atendidos</span>
+            </div>
           </motion.div>
         </motion.div>
 
