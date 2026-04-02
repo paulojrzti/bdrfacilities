@@ -50,11 +50,11 @@ export function CtaSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" href="https://wa.me/5521000000000">
+            <Button size="lg" href="https://wa.me/5521990975359">
               <MessageCircle className="w-5 h-5 mr-2" />
               Falar com especialista
             </Button>
-            <Button size="lg" variant="outline" href="https://wa.me/5521000000000">
+            <Button size="lg" variant="outline" href="https://wa.me/5521990975359">
               Solicitar orçamento
             </Button>
           </div>

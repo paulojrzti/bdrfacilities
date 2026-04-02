@@ -85,7 +85,7 @@ export function CondoHero() {
             transition={{ delay: 0.9, duration: 0.6 }}
             className="flex flex-col sm:flex-row items-center gap-6"
           >
-            <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521999999999">
+            <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521990975359">
               Solicitar diagnóstico do condomínio
             </Button>
             <div className="flex flex-col">

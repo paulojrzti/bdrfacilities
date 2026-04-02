@@ -50,7 +50,7 @@ export function CondoCta() {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521999999999">
+              <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521990975359">
                 Falar com especialista no WhatsApp
               </Button>
               <p className="mt-6 text-sm text-gold/60 font-medium tracking-wide uppercase">Atendimento humanizado imediato</p>
