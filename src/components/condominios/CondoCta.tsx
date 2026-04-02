@@ -1,0 +1,50 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/Button";
+
+export function CondoCta() {
+  return (
+    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+      {/* Background gradients */}
+      <div className="absolute inset-0 pointer-events-none">
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold/5 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto p-12 lg:p-20 rounded-[40px] bg-surface/40 border border-gold/20 text-center shadow-glow-gold/10">
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="text-3xl lg:text-5xl font-heading font-bold text-white mb-8"
+          >
+            Tenha um condomínio funcionando <span className="text-gradient">sem dor de cabeça</span>
+          </motion.h2>
+          
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg lg:text-xl text-text-secondary mb-12 max-w-2xl mx-auto"
+          >
+            Nossa equipe está pronta para assumir a gestão operacional do seu condomínio com o padrão de excelência BRD.
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521999999999">
+              Falar com especialista no WhatsApp
+            </Button>
+            <p className="mt-6 text-sm text-gold/60 font-medium tracking-wide uppercase">Atendimento humanizado imediato</p>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
