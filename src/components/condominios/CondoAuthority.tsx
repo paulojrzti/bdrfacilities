@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export function CondoAuthority() {
   const clients = [
-    { name: "AquaRio", desc: "Complexo aquático — RJ", img: "/AquaRio-1024x753.png" },
-    { name: "Cristo Redentor", desc: "Patrimônio mundial — UNESCO", img: "/2017-10-29-cristo-redentor-conheca-a-historia-dessa-maravilha-do-mundo-moderno2.jpg.webp" },
+    { name: "AquaRio", desc: "Complexo aquático — RJ", img: "/aquario.png" },
+    { name: "Cristo Redentor", desc: "Patrimônio mundial — UNESCO", img: "/cristo-redentor.webp" },
     { name: "Parque Lage", desc: "Centro cultural — RJ", img: "/parquelage.png" },
   ];
 
