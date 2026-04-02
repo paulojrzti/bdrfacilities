@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2, Cog } from "lucide-react";
+import Image from "next/image";
 
 export function CondoMechanism() {
   const mechanismBullets = [
@@ -79,10 +80,20 @@ export function CondoMechanism() {
             <div className="absolute inset-0 bg-gold/5 blur-[120px] rounded-full" />
             
             <div className="relative w-full max-w-md h-full border border-border-dark bg-surface/40 backdrop-blur-sm rounded-3xl p-10 flex flex-col justify-between overflow-hidden group">
+               {/* Background staff image */}
+               <div className="absolute inset-0 z-0 opacity-20 grayscale transition-all duration-700 group-hover:opacity-30 group-hover:grayscale-0">
+                 <Image
+                    src="/condo-staff.png"
+                    alt="Staff operacional BRD"
+                    fill
+                    className="object-cover"
+                 />
+               </div>
+
                {/* Decorative diagonal line as per reference */}
-               <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 -rotate-45 translate-x-12 -translate-y-12 transition-transform duration-700 group-hover:scale-150" />
+               <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 -rotate-45 translate-x-12 -translate-y-12 transition-transform duration-700 group-hover:scale-150 z-10" />
                
-               <div className="space-y-8">
+               <div className="space-y-8 relative z-10">
                   <div className="flex flex-col gap-2">
                      <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Protocolo BRD</span>
                      <h3 className="text-2xl font-heading font-bold text-white">Gestão Unificada</h3>
@@ -103,7 +114,7 @@ export function CondoMechanism() {
                   </div>
                </div>
                
-               <div className="p-6 bg-background rounded-xl border border-border-dark mt-8 self-end shadow-2xl">
+               <div className="p-6 bg-background/90 backdrop-blur-md rounded-xl border border-border-dark mt-8 self-end shadow-2xl relative z-10">
                   <p className="text-sm font-medium text-text-secondary leading-snug">
                     "O padrão BRD me deu a tranquilidade que nenhum síndico deveria abrir mão."
                   </p>

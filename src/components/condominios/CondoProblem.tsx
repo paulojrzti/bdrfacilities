@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { AlertCircle } from "lucide-react";
+import Image from "next/image";
 
 export function CondoProblem() {
   const problems = [
@@ -53,19 +54,31 @@ export function CondoProblem() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative z-10 bg-surface/50 backdrop-blur-sm p-10 lg:p-14 border border-border-dark rounded-br-[60px] rounded-tl-[60px]">
-              <AlertCircle className="w-12 h-12 text-gold mb-8 stroke-1" />
-              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mb-8">
-                No final, o condomínio vira um trabalho diário — e não uma gestão.
-              </p>
-              
-              <div className="h-px w-full bg-gradient-to-r from-gold/50 to-transparent mb-8" />
-              
-              <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-                <span className="text-white font-semibold">O problema não é o condomínio.</span>
-                <br />
-                É a forma como a operação está sendo gerida.
-              </p>
+            <div className="relative z-10 bg-surface/50 backdrop-blur-sm p-10 lg:p-14 border border-border-dark rounded-br-[60px] rounded-tl-[60px] overflow-hidden">
+              {/* Background reception image */}
+              <div className="absolute inset-0 z-0 opacity-10 grayscale">
+                <Image
+                  src="/condo-reception.png"
+                  alt="Recepção de condomínio"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="relative z-10">
+                <AlertCircle className="w-12 h-12 text-gold mb-8 stroke-1" />
+                <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mb-8">
+                  No final, o condomínio vira um trabalho diário — e não uma gestão.
+                </p>
+                
+                <div className="h-px w-full bg-gradient-to-r from-gold/50 to-transparent mb-8" />
+                
+                <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+                  <span className="text-white font-semibold">O problema não é o condomínio.</span>
+                  <br />
+                  É a forma como a operação está sendo gerida.
+                </p>
+              </div>
             </div>
             
             {/* Background design elements */}
