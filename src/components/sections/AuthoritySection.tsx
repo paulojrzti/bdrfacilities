@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const clients = [
-  { name: "AquaRio", desc: "Complexo aquático — RJ" },
-  { name: "Cristo Redentor", desc: "Patrimônio mundial — UNESCO" },
-  { name: "Parque Lage", desc: "Centro cultural — RJ" },
+  { name: "AquaRio", desc: "Complexo aquático — RJ", img: "/AquaRio-1024x753.png" },
+  { name: "Cristo Redentor", desc: "Patrimônio mundial — UNESCO", img: "/2017-10-29-cristo-redentor-conheca-a-historia-dessa-maravilha-do-mundo-moderno2.jpg.webp" },
+  { name: "Parque Lage", desc: "Centro cultural — RJ", img: "/parquelage.png" },
 ];
 
 export function AuthoritySection() {
@@ -21,7 +22,7 @@ export function AuthoritySection() {
           Padrão exigido em operações de alto fluxo
         </motion.p>
 
-        <div className="flex flex-col md:flex-row justify-center items-stretch divide-y md:divide-y-0 md:divide-x divide-border-dark">
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 md:gap-0 md:divide-x divide-border-dark">
           {clients.map((client, idx) => (
             <motion.div
               key={idx}
@@ -29,14 +30,25 @@ export function AuthoritySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15, duration: 0.7 }}
-              className="group flex-1 text-center px-10 py-6 hover:bg-gold/5 transition-colors duration-500 rounded-xl md:rounded-none"
+              className="group flex-1 flex flex-col items-center gap-4 px-8 py-4"
             >
-              <p className="text-2xl md:text-[1.65rem] font-heading font-bold text-white/40 group-hover:text-white transition-all duration-500 mb-1.5 tracking-tight">
-                {client.name}
-              </p>
-              <p className="text-xs text-text-secondary/50 group-hover:text-gold/70 transition-colors duration-500 tracking-wide">
-                {client.desc}
-              </p>
+              <div className="relative w-full h-36 rounded-xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+                <Image
+                  src={client.img}
+                  alt={client.name}
+                  fill
+                  className="object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              </div>
+              <div className="text-center">
+                <p className="text-base font-heading font-bold text-white/60 group-hover:text-white transition-colors duration-500 tracking-tight">
+                  {client.name}
+                </p>
+                <p className="text-xs text-text-secondary/50 group-hover:text-gold/70 transition-colors duration-500 tracking-wide mt-0.5">
+                  {client.desc}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

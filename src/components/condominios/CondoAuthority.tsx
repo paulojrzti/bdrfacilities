@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export function CondoAuthority() {
   const clients = [
-    { name: "AquaRio", logo: "/clients/aquario.png" },
-    { name: "Cristo Redentor", logo: "/clients/cristo.png" },
-    { name: "Parque Lage", logo: "/clients/parquelage.png" },
+    { name: "AquaRio", desc: "Complexo aquático — RJ", img: "/AquaRio-1024x753.png" },
+    { name: "Cristo Redentor", desc: "Patrimônio mundial — UNESCO", img: "/2017-10-29-cristo-redentor-conheca-a-historia-dessa-maravilha-do-mundo-moderno2.jpg.webp" },
+    { name: "Parque Lage", desc: "Centro cultural — RJ", img: "/parquelage.png" },
   ];
 
   return (
@@ -32,23 +32,31 @@ export function CondoAuthority() {
             A BRD atua em operações com alto fluxo e exigência, como AquaRio, Cristo Redentor e Parque Lage.
           </motion.p>
           
-          <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-             {/* Note: In a real project, these would be actual logos. I'll use placeholders if images are missing */}
-             {clients.map((client, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * i }}
-                  className="relative h-12 w-32"
-                >
-                  {/* Since I don't have the logos, I'll display the name in a stylized way */}
-                  <div className="flex items-center justify-center w-full h-full text-white font-bold tracking-tighter text-xl">
-                    {client.name}
-                  </div>
-                </motion.div>
-             ))}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
+            {clients.map((client, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.15 * i, duration: 0.7 }}
+                className="group relative rounded-2xl overflow-hidden border border-border-dark hover:border-gold/30 transition-all duration-500"
+              >
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={client.img}
+                    alt={client.name}
+                    fill
+                    className="object-cover grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <p className="font-heading font-bold text-white text-lg leading-tight">{client.name}</p>
+                  <p className="text-xs text-gold/60 mt-0.5 tracking-wide">{client.desc}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
