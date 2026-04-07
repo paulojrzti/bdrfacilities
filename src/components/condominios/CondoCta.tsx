@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import Image from "next/image";
 
 export function CondoCta() {
@@ -51,7 +52,8 @@ export function CondoCta() {
               transition={{ delay: 0.4 }}
             >
               <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521990975359">
-                Falar com especialista no WhatsApp
+                <WhatsAppIcon className="w-5 h-5 mr-2" />
+                Falar com especialista
               </Button>
               <p className="mt-6 text-sm text-gold/60 font-medium tracking-wide uppercase">Atendimento humanizado imediato</p>
             </motion.div>

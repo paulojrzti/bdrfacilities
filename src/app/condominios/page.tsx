@@ -4,6 +4,7 @@ import { CondoHero } from "@/components/condominios/CondoHero";
 import { CondoProblem } from "@/components/condominios/CondoProblem";
 import { CondoConsequence } from "@/components/condominios/CondoConsequence";
 import { CondoAuthority } from "@/components/condominios/CondoAuthority";
+import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 import { CondoMechanism } from "@/components/condominios/CondoMechanism";
 import { CondoBenefits } from "@/components/condominios/CondoBenefits";
 import { CondoProcess } from "@/components/condominios/CondoProcess";
@@ -26,6 +27,7 @@ export default function CondominiosPage() {
         <CondoProblem />
         <CondoConsequence />
         <CondoAuthority />
+        <BeforeAfterSection />
         <CondoMechanism />
         <CondoBenefits />
         <CondoProcess />

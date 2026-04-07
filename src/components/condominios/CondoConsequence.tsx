@@ -32,7 +32,7 @@ const items = [
   },
 ];
 
-// Progressive glow per item — escalates emotionally
+// Progressive glow per item
 const cardGlows = [
   "radial-gradient(ellipse at top left, rgba(212,175,55,0.05) 0%, transparent 65%)",
   "radial-gradient(ellipse at top left, rgba(212,175,55,0.08) 0%, transparent 65%)",

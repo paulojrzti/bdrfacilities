@@ -29,7 +29,7 @@ const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
 
     const variants = {
       primary:
-        "btn-gold-metallic text-black font-semibold active:scale-[0.97]",
+        "btn-gold-metallic text-white font-semibold active:scale-[0.97]",
       secondary:
         "bg-surface text-white hover:bg-surface/80 border border-border-dark",
       outline:

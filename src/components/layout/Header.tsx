@@ -29,7 +29,7 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Nav links — desktop only */}
+        {/* Nav links */}
         <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <Link

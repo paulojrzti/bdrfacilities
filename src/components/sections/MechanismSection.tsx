@@ -2,36 +2,22 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Shield, Award, Clock, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/Button";
 
 const points = [
-  {
-    icon: Shield,
-    text: "Foco em vistoria",
-    desc: "Limpeza orientada a pontos de inspeção técnica.",
-  },
-  {
-    icon: Award,
-    text: "Execução técnica",
-    desc: "Profissionais treinados em padrões de entrega.",
-  },
-  {
-    icon: Clock,
-    text: "Equipe preparada",
-    desc: "Time mobilizado no prazo que você precisar.",
-  },
-  {
-    icon: CheckCircle2,
-    text: "Redução de risco",
-    desc: "Eliminação das causas de reprovação na vistoria.",
-  },
+  "Limpeza orientada para vistoria",
+  "Equipe treinada para pós-obra (não é equipe comum)",
+  "Atuação em pontos críticos de inspeção",
+  "Redução de risco de reprovação",
+  "Entrega pronta para operação imediata",
 ];
 
 export function MechanismSection() {
   return (
     <section id="protocolo" className="relative py-32 bg-background overflow-hidden">
 
-<div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-16 items-center">
         {/* Visual Panel */}
         <motion.div
           initial={{ opacity: 0, scale: 0.93 }}
@@ -40,19 +26,15 @@ export function MechanismSection() {
           transition={{ duration: 0.7 }}
           className="relative h-[440px] w-full rounded-2xl border border-border-dark overflow-hidden shadow-2xl"
         >
-          {/* Real image */}
           <Image
             src="/mechanism.png"
             alt="Equipe técnica de limpeza pós-obra em ação"
             fill
             className="object-cover"
           />
-          {/* Dark overlay */}
           <div className="absolute inset-0 bg-background/60" />
-{/* Ambient glow */}
           <div className="absolute top-0 left-0 right-0 h-48 bg-gold/5 blur-2xl pointer-events-none z-10" />
 
-          {/* Content overlay */}
           <div className="absolute inset-0 flex flex-col justify-between p-8 z-20">
             <div>
               <p className="text-xs text-gold tracking-widest uppercase mb-3 font-medium">
@@ -67,8 +49,7 @@ export function MechanismSection() {
               </p>
             </div>
 
-
-<div>
+            <div>
               <p className="text-xs text-gold tracking-widest uppercase mb-3 font-medium">
                 Método validado
               </p>
@@ -90,16 +71,16 @@ export function MechanismSection() {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-white leading-tight">
-              Protocolo de Limpeza{" "}
+              Execução técnica de limpeza{" "}
               <br />
-              <span className="text-gradient">para Entrega Técnica</span>
+              <span className="text-gradient">para liberação da obra na vistoria</span>
             </h2>
             <p className="text-lg text-text-secondary mb-10 max-w-md leading-relaxed">
-              Não é limpeza comum. É execução orientada para aprovação.
+              Entramos na obra com foco total nos pontos que geram reprovação: acabamentos, resíduos de obra, detalhes de inspeção e áreas críticas. A equipe sabe exatamente onde o fiscal olha e atua para eliminar qualquer risco de retrabalho. Você não precisa revisar, cobrar ou refazer.
             </p>
           </motion.div>
 
-          <ul className="space-y-5">
+          <ul className="space-y-4 mb-10">
             {points.map((point, idx) => (
               <motion.li
                 key={idx}
@@ -107,16 +88,22 @@ export function MechanismSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="flex items-start gap-4 group"
+                className="flex items-start gap-3"
               >
-                <point.icon className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-white font-semibold font-heading text-base">{point.text}</p>
-                  <p className="text-text-secondary text-sm mt-0.5">{point.desc}</p>
-                </div>
+                <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span className="text-white/90 text-base">{point}</span>
               </motion.li>
             ))}
           </ul>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+          >
+            <Button href="#orcamento">Solicitar orçamento</Button>
+          </motion.div>
         </div>
       </div>
     </section>
