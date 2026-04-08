@@ -28,7 +28,7 @@ export function CondoHero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center py-32">
+      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center py-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
