@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function CondoCta() {
   return (
-    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+    <section className="py-16 lg:py-20 bg-background relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute inset-0 pointer-events-none">
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold/5 blur-[120px] rounded-full" />

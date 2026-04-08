@@ -178,7 +178,7 @@ export function CondoConsequence() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 lg:py-40 bg-background relative overflow-hidden"
+      className="py-16 lg:py-24 bg-background relative overflow-hidden"
     >
       {/* Ambient glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">

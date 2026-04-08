@@ -11,7 +11,7 @@ export function CondoComparison() {
   ];
 
   return (
-    <section className="py-24 bg-surface/10 border-y border-border-dark">
+    <section className="py-16 bg-zinc-50 border-y border-zinc-200">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <motion.h2

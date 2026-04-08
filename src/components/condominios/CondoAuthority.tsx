@@ -11,7 +11,7 @@ export function CondoAuthority() {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-zinc-50 border-y border-zinc-200">
+    <section className="py-16 bg-zinc-50 border-y border-zinc-200">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.p
@@ -47,7 +47,7 @@ export function CondoAuthority() {
                     src={client.img}
                     alt={client.name}
                     fill
-                    className="object-cover grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-85 group-hover:scale-105 transition-all duration-700"
+                    className="object-cover group-hover:scale-105 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/70 to-transparent" />
                 </div>

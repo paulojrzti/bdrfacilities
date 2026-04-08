@@ -42,20 +42,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <div className="relative h-9 w-9 flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="BRD Facilities Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-white font-heading font-bold text-base tracking-wider">BRD</span>
-            <span className="text-text-secondary text-[10px] tracking-widest uppercase">Facilities</span>
-          </div>
+        <div className="relative h-10 w-36 flex-shrink-0">
+          <Image
+            src="/logo.png"
+            alt="BRD Facilities"
+            fill
+            className="object-contain object-left"
+            priority
+          />
         </div>
         <Button size="sm" href="#orcamento">
           Solicitar orçamento

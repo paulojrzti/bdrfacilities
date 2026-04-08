@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { AuthoritySection } from "@/components/sections/AuthoritySection";
-import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 import { MechanismSection } from "@/components/sections/MechanismSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { CtaSection } from "@/components/sections/CtaSection";
@@ -16,8 +15,7 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <AuthoritySection />
-        <BeforeAfterSection />
-        <MechanismSection />
+<MechanismSection />
         <ProcessSection />
         <CtaSection />
       </main>

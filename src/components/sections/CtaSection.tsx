@@ -48,15 +48,10 @@ export function CtaSection() {
             Fale com um especialista e receba um orçamento sob medida para sua necessidade.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" href="https://wa.me/5521990975359">
-              <WhatsAppIcon className="w-5 h-5 mr-2" />
-              Solicitar orçamento
-            </Button>
-            <Button size="lg" variant="outline" href="https://wa.me/5521990975359">
-              Falar com especialista
-            </Button>
-          </div>
+          <Button size="lg" href="https://wa.me/5521990975359">
+            <WhatsAppIcon className="w-5 h-5 mr-2" />
+            Solicitar orçamento
+          </Button>
         </motion.div>
       </div>
     </section>

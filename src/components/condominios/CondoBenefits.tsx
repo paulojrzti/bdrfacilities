@@ -34,7 +34,7 @@ const benefits = [
 
 export function CondoBenefits() {
   return (
-    <section className="py-24 lg:py-40 bg-zinc-50 border-t border-zinc-200 relative overflow-hidden">
+    <section className="py-16 lg:py-24 bg-zinc-50 border-t border-zinc-200 relative overflow-hidden">
       {/* Background aesthetic touches */}
       <div className="absolute top-1/4 -right-20 w-96 h-96 bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-1/4 -left-20 w-80 h-80 bg-gold/5 blur-[100px] rounded-full pointer-events-none" />
@@ -49,7 +49,7 @@ export function CondoBenefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="max-w-2xl mb-16 lg:mb-24"
+              className="max-w-2xl mb-10"
             >
               <h2 className="text-4xl lg:text-6xl font-heading font-bold text-zinc-900 mb-6 leading-tight">
                 O que muda na <span className="text-gradient">prática</span>

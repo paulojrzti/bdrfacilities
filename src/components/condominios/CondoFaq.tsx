@@ -21,14 +21,14 @@ export function CondoFaq() {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 bg-zinc-50 border-t border-zinc-200">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-heading font-bold text-center text-white mb-16"
+            className="text-3xl lg:text-4xl font-heading font-bold text-center text-zinc-900 mb-12"
           >
             Dúvidas frequentes
           </motion.h2>
@@ -53,13 +53,13 @@ function FaqItem({ question, answer, index }: { question: string; answer: string
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="border border-border-dark rounded-xl bg-surface/20 overflow-hidden"
+      className="border border-zinc-200 rounded-xl bg-white overflow-hidden"
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full p-6 text-left flex items-center justify-between group transition-colors duration-300 hover:bg-surface/30"
+        className="w-full p-6 text-left flex items-center justify-between group transition-colors duration-300 hover:bg-zinc-50"
       >
-        <span className="text-lg font-medium text-white/90 font-heading">{question}</span>
+        <span className="text-lg font-medium text-zinc-900 font-heading">{question}</span>
         <div className={`p-1 rounded-full border border-gold/40 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
           {isOpen ? <Minus className="w-4 h-4 text-gold" /> : <Plus className="w-4 h-4 text-gold" />}
         </div>
@@ -71,7 +71,7 @@ function FaqItem({ question, answer, index }: { question: string; answer: string
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className="overflow-hidden"
       >
-        <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-dark/50 pt-4">
+        <div className="px-6 pb-6 text-zinc-600 leading-relaxed border-t border-zinc-100 pt-4">
           {answer}
         </div>
       </motion.div>
