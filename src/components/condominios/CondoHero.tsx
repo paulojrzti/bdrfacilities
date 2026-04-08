@@ -32,13 +32,13 @@ export function CondoHero() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="max-w-3xl"
         >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.35 }}
             className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 backdrop-blur-sm"
           >
             <span className="w-2 h-2 rounded-full bg-gold" />
@@ -50,7 +50,7 @@ export function CondoHero() {
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.4 }}
             className="text-4xl lg:text-6xl font-heading font-bold leading-[1.1] mb-6 tracking-tight text-white"
           >
             Terceirize a{" "}
@@ -61,7 +61,7 @@ export function CondoHero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.45, duration: 0.8 }}
+            transition={{ delay: 0.45, duration: 0.4 }}
             className="text-lg text-white/80 mb-8 leading-relaxed max-w-xl mx-auto"
           >
             Pare de lidar com falta de funcionário, reclamação de morador e falhas na operação do dia a dia. A BRD assume a equipe, mantém todos os postos cobertos e garante padrão na operação — sem imprevistos e sem retrabalho.
@@ -70,7 +70,7 @@ export function CondoHero() {
           <motion.ul
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.4 }}
             className="flex flex-col sm:flex-row justify-center gap-x-8 gap-y-2 mb-10"
           >
             {bullets.map((bullet, i) => (
@@ -90,7 +90,7 @@ export function CondoHero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.6 }}
+            transition={{ delay: 0.9, duration: 0.35 }}
             className="flex flex-col items-center gap-3"
           >
             <Button size="lg" href="https://wa.me/5521990975359">
@@ -108,7 +108,7 @@ export function CondoHero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
+        transition={{ delay: 1.5, duration: 0.4 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none"
       >
         <span className="text-white/40 text-[10px] tracking-widest uppercase">Scroll</span>

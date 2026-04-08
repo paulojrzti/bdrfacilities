@@ -29,7 +29,7 @@ export function AuthoritySection() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.15, duration: 0.7 }}
+              transition={{ delay: idx * 0.15, duration: 0.4 }}
               className="group flex-1 flex flex-col items-center gap-4 px-8 py-4"
             >
               <div className="relative w-full h-56 rounded-xl overflow-hidden transition-all duration-700">

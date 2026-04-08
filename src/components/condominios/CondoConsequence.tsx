@@ -111,7 +111,7 @@ function ItemCard({
       initial={{ opacity: 0, x: fromX }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.12 * i, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+      transition={{ delay: 0.12 * i, duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
       whileHover={{ scale: 1.025 }}
       className="group relative p-6 lg:p-8 rounded-2xl border border-border-dark transition-all duration-500 cursor-default"
       style={{ background: gradient }}
@@ -159,7 +159,7 @@ function ItemCard({
             }}
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
-            transition={{ duration: 1.2, delay: 0.4 + i * 0.1 }}
+            transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
           />
         </div>
       </div>
@@ -192,7 +192,7 @@ export function CondoConsequence() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.75 }}
+          transition={{ duration: 0.45 }}
           className="max-w-2xl mx-auto text-center mb-20 lg:mb-32"
         >
           <motion.span
@@ -301,7 +301,7 @@ export function CondoConsequence() {
           initial={{ opacity: 0, y: 36 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.85, delay: 0.2 }}
+          transition={{ duration: 0.45, delay: 0.2 }}
           className="mt-24 lg:mt-36 max-w-2xl mx-auto text-center"
         >
           {/* Separator */}

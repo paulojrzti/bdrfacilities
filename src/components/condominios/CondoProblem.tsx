@@ -20,7 +20,7 @@ export function CondoProblem() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="flex flex-col gap-6"
           >
             <h2 className="text-3xl lg:text-5xl font-heading font-bold text-zinc-900 leading-tight">
@@ -50,7 +50,7 @@ export function CondoProblem() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="relative"
           >
             <div className="relative z-10 bg-white p-10 lg:p-14 border border-zinc-200 rounded-br-[60px] rounded-tl-[60px] overflow-hidden">

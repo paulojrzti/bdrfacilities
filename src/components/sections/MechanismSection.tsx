@@ -23,7 +23,7 @@ export function MechanismSection() {
           initial={{ opacity: 0, scale: 0.93 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           className="relative h-[440px] w-full rounded-2xl border border-border-dark overflow-hidden shadow-2xl"
         >
           <Image
@@ -68,7 +68,7 @@ export function MechanismSection() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.4 }}
           >
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-white leading-tight">
               Execução técnica de limpeza{" "}

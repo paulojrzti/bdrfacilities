@@ -24,7 +24,7 @@ export function CtaSection() {
           initial={{ opacity: 0, scale: 0.94 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
         >
           {/* Availability badge */}
           <motion.div

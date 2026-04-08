@@ -48,7 +48,7 @@ export function CondoBenefits() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.35 }}
               className="max-w-2xl mb-10"
             >
               <h2 className="text-4xl lg:text-6xl font-heading font-bold text-zinc-900 mb-6 leading-tight">
@@ -66,7 +66,7 @@ export function CondoBenefits() {
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.1 * i, duration: 0.6 }}
+                  transition={{ delay: 0.1 * i, duration: 0.35 }}
                   className="group flex gap-6 lg:gap-8 items-start relative p-4 rounded-2xl hover:bg-gold/5 transition-all duration-500 border border-transparent hover:border-gold/20"
                 >
                   <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-xl bg-white border border-zinc-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:bg-gold/10 group-hover:border-gold/30 transition-all duration-500 shadow-sm">
@@ -86,7 +86,7 @@ export function CondoBenefits() {
                         className="h-px bg-gradient-to-r from-gold/40 to-transparent mt-4 opacity-0 group-hover:opacity-100"
                         initial={{ width: 0 }}
                         whileInView={{ width: "100%" }}
-                        transition={{ duration: 1.5, delay: 0.5 + i * 0.1 }}
+                        transition={{ duration: 0.8, delay: 0.5 + i * 0.1 }}
                       />
                   </div>
                 </motion.div>
@@ -102,7 +102,7 @@ export function CondoBenefits() {
               initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }}
               className="relative z-10 w-full max-w-[400px] h-[520px] bg-white border border-zinc-200 rounded-[32px] p-8 overflow-hidden shadow-lg flex flex-col justify-between"
             >
                {/* Background texture/blur */}
@@ -126,7 +126,7 @@ export function CondoBenefits() {
                                  initial={{ width: 0 }}
                                  whileInView={{ width: `${val}%` }}
                                  viewport={{ once: true }}
-                                 transition={{ duration: 1.5, delay: 0.5 + i * 0.2 }}
+                                 transition={{ duration: 0.8, delay: 0.5 + i * 0.2 }}
                                  className="h-full bg-gold"
                               />
                            </div>

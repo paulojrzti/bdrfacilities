@@ -29,7 +29,7 @@ export function CondoProcess() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2 * i, duration: 0.6 }}
+              transition={{ delay: 0.2 * i, duration: 0.35 }}
               className="relative p-8 rounded-2xl border border-zinc-200 bg-white group hover:border-gold/30 transition-all duration-500"
             >
               {/* Step number bg */}

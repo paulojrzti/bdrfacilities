@@ -39,7 +39,7 @@ export function CondoAuthority() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.15 * i, duration: 0.7 }}
+                transition={{ delay: 0.15 * i, duration: 0.4 }}
                 className="group relative rounded-2xl overflow-hidden border border-zinc-200 hover:border-gold/40 transition-all duration-500"
               >
                 <div className="relative h-72 w-full">

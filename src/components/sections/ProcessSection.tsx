@@ -31,7 +31,7 @@ export function ProcessSection() {
               initial={{ width: "0%" }}
               whileInView={{ width: "100%" }}
               viewport={{ once: true }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
             />
           </div>
 
