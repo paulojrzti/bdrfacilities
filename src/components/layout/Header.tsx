@@ -51,7 +51,7 @@ export function Header() {
             priority
           />
         </div>
-        <Button size="sm" href="#orcamento">
+        <Button size="sm" href="#protocolo">
           Solicitar orçamento
         </Button>
       </div>

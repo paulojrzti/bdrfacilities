@@ -7,30 +7,32 @@ import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 const services = [
   {
-    tag: "Entrega de Módulo",
-    title: "Limpeza de Entrega de Módulo",
-    desc: "Limpeza geral de superfícies com produtos alcalinos e desincrustantes, preparando o ambiente para a entrega do módulo construtivo.",
+    tag: "Comum",
+    title: "Limpeza Pós-Obra",
+    desc: "Limpeza 'grossa' com foco na remoção de resíduos pesados e limpeza geral para baixar a poeira, deixando o ambiente limpo após a obra.",
     bullets: [
-      "Remoção de resíduos de construção",
-      "Limpeza de pisos e revestimentos",
-      "Limpeza de esquadrias e vidros externos",
-      "Desincrustação de argamassa e cimento",
-      "Entrega pronta para vistoria",
+      "Foco na remoção de resíduos pesados e entulhos leves",
+      "Limpeza geral para abaixar a poeira da obra",
+      "Ideal para ambientes que ainda receberão outros serviços",
+      "Limpeza de pisos e superfícies brutas",
+      "Preparação técnica para vistorias de entrega de módulo",
     ],
     highlight: false,
+    whatsappMsg: "Olá! Gostaria de um orçamento para a Limpeza Pós-Obra de padrão Comum.",
   },
   {
     tag: "Premium",
-    title: "Pós-Obra de Fino Acabamento",
-    desc: "Processo completo com tratamento refinado para pisos, vidros e esquadrias — destinado a obras com padrão premium de entrega.",
+    title: "Limpeza Pós-Obra Premium",
+    desc: "Realiza a limpeza 'grossa' mas com foco total no fino acabamento e detalhes técnicos, preparando o ambiente para a entrega final ao cliente.",
     bullets: [
-      "Todo o processo de entrega de módulo incluso",
-      "Polimento e tratamento de pisos nobres",
+      "Inclui todo o processo da limpeza grossa",
+      "Foco total em fino acabamento e detalhes de entrega",
       "Limpeza técnica de vidros com químico especializado",
-      "Limpeza de esquadrias com detalhe em perfis",
-      "Remoção de resíduos em pontos críticos de inspeção",
+      "Tratamento de superfícies nobres e metais",
+      "Entrega final 'chave na mão' pronta para o cliente",
     ],
     highlight: true,
+    whatsappMsg: "Olá! Gostaria de um orçamento para a Limpeza Pós-Obra de padrão Premium.",
   },
 ];
 
@@ -109,7 +111,7 @@ export function MechanismSection() {
                 ))}
               </ul>
 
-              <Button href="https://wa.me/5521990975359" size="sm">
+              <Button href={`https://wa.me/5521990975359?text=${encodeURIComponent(service.whatsappMsg)}`} size="sm">
                 <WhatsAppIcon className="w-4 h-4 mr-2" />
                 Solicitar orçamento
               </Button>

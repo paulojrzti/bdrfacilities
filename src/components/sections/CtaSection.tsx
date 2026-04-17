@@ -48,8 +48,7 @@ export function CtaSection() {
             Fale com um especialista e receba um orçamento sob medida para sua necessidade.
           </p>
 
-          <Button size="lg" href="https://wa.me/5521990975359">
-            <WhatsAppIcon className="w-5 h-5 mr-2" />
+          <Button size="lg" href="#protocolo">
             Solicitar orçamento
           </Button>
         </motion.div>

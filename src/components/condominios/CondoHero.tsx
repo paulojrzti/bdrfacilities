@@ -35,18 +35,6 @@ export function CondoHero() {
           transition={{ duration: 0.4 }}
           className="max-w-3xl"
         >
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.35 }}
-            className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 backdrop-blur-sm"
-          >
-            <span className="w-2 h-2 rounded-full bg-gold" />
-            <span className="text-gold text-xs font-medium tracking-widest uppercase">
-              Gestão Condominial Premium
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -58,27 +46,18 @@ export function CondoHero() {
             do Seu Condomínio
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.45, duration: 0.4 }}
-            className="text-lg text-white/80 mb-8 leading-relaxed max-w-xl mx-auto"
-          >
-            Pare de lidar com falta de funcionário, reclamação de morador e falhas na operação do dia a dia. A BRD assume a equipe, mantém todos os postos cobertos e garante padrão na operação — sem imprevistos e sem retrabalho.
-          </motion.p>
-
           <motion.ul
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.4 }}
-            className="flex flex-col sm:flex-row justify-center gap-x-8 gap-y-2 mb-10"
+            transition={{ delay: 0.45, duration: 0.4 }}
+            className="flex flex-col sm:flex-row justify-center gap-x-8 gap-y-2 mb-8"
           >
             {bullets.map((bullet, i) => (
               <motion.li
                 key={i}
                 initial={{ opacity: 0, y: 6 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 + i * 0.1 }}
+                transition={{ delay: 0.55 + i * 0.1 }}
                 className="flex items-center justify-center gap-2 text-white/75 text-sm"
               >
                 <CheckCircle2 className="w-4 h-4 text-gold flex-shrink-0" />
@@ -87,10 +66,19 @@ export function CondoHero() {
             ))}
           </motion.ul>
 
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.4 }}
+            className="text-lg text-white/80 mb-10 leading-relaxed max-w-xl mx-auto"
+          >
+            Pare de lidar com falta de funcionário, reclamação de morador e falhas na operação do dia a dia. A BRD assume a equipe, mantém todos os postos cobertos e garante padrão na operação.
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.35 }}
+            transition={{ delay: 1.0, duration: 0.35 }}
             className="flex flex-col items-center gap-3"
           >
             <Button size="lg" href="https://wa.me/5521990975359">

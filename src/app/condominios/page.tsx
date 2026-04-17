@@ -24,11 +24,11 @@ export default function CondominiosPage() {
       <Header />
       <main className="flex-1 flex flex-col w-full pt-16 selection:bg-gold/30 overflow-hidden">
         <CondoHero />
+        <CondoServices />
         <CondoProblem />
         <CondoConsequence />
         <CondoAuthority />
-<CondoMechanism />
-        <CondoServices />
+        <CondoMechanism />
         <CondoBenefits />
         <CondoProcess />
         <CondoComparison />

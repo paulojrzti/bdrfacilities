@@ -79,7 +79,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.4 }}
           >
-            <Button size="lg" href="#orcamento">
+            <Button size="lg" href="#protocolo">
               Solicitar orçamento
             </Button>
           </motion.div>
