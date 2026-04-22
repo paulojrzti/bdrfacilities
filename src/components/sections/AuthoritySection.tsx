@@ -6,7 +6,7 @@ import Image from "next/image";
 const clients = [
   { name: "AquaRio", desc: "alto fluxo diário de visitantes", img: "/aquario.png" },
   { name: "Cristo Redentor", desc: "padrão máximo de conservação", img: "/cristo-redentor.webp" },
-  { name: "Bioparque ao Zoológico", desc: "ambiente histórico com exigência técnica", img: "/parquelage.png" },
+  { name: "BioParque do Rio", desc: "ambiente histórico com exigência técnica", img: "/unnamed-1.webp" },
 ];
 
 export function AuthoritySection() {

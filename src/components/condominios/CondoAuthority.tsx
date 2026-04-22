@@ -7,7 +7,7 @@ export function CondoAuthority() {
   const clients = [
     { name: "AquaRio", desc: "operação com alto fluxo diário", img: "/aquario.png" },
     { name: "Cristo Redentor", desc: "padrão elevado de exigência", img: "/cristo-redentor.webp" },
-    { name: "Bioparque ao Zoológico", desc: "ambiente com controle rigoroso", img: "/parquelage.png" },
+    { name: "BioParque do Rio", desc: "ambiente com controle rigoroso", img: "/unnamed-1.webp" },
   ];
 
   return (
