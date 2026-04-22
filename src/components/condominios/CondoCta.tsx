@@ -51,7 +51,7 @@ export function CondoCta() {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521990975359">
+              <Button size="lg" className="w-full sm:w-auto" href="https://wa.me/5521990975359?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+terceiriza%C3%A7%C3%A3o+da+gest%C3%A3o+operacional+do+meu+condom%C3%ADnio.">
                 <WhatsAppIcon className="w-5 h-5 mr-2" />
                 Falar com especialista
               </Button>
