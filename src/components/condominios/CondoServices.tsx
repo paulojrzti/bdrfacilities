@@ -1,18 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Eye, Shield, DoorOpen, Wrench, PhoneCall, HardHat } from "lucide-react";
+import { Briefcase, Shield, DoorOpen, Wrench, PhoneCall, HardHat } from "lucide-react";
 
 const services = [
   {
     icon: Briefcase,
     name: "ASG",
     desc: "Auxiliar de Serviços Gerais para apoio às operações do condomínio",
-  },
-  {
-    icon: Eye,
-    name: "Vigilância",
-    desc: "Serviço de vigilância para monitoramento e controle de acesso",
   },
   {
     icon: Shield,
