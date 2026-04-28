@@ -8,7 +8,7 @@ import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 const bullets = [
   "Substituição rápida em caso de falta",
-  "Redução de risco trabalhista",
+  "Menos imprevistos na rotina",
   "Operação organizada e previsível",
 ];
 

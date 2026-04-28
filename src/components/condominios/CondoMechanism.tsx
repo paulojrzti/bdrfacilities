@@ -9,7 +9,7 @@ export function CondoMechanism() {
     "Substituição rápida",
     "Supervisão contínua",
     "Padronização",
-    "Redução de risco trabalhista",
+    "Menos imprevistos no dia a dia",
   ];
 
   return (
@@ -85,7 +85,7 @@ export function CondoMechanism() {
                 {[
                   { label: "Cobertura de postos", value: "100%" },
                   { label: "Tempo de substituição", value: "45 min" },
-                  { label: "Risco trabalhista", value: "Reduzido" },
+                  { label: "Controle operacional", value: "Elevado" },
                 ].map((item, i) => (
                   <div key={i} className="flex justify-between items-center border-b border-zinc-100 pb-4 last:border-0 last:pb-0">
                     <span className="text-sm text-zinc-500">{item.label}</span>

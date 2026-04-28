@@ -7,8 +7,8 @@ import { useRef } from "react";
 const items = [
   {
     icon: ShieldAlert,
-    title: "Risco trabalhista constante",
-    description: "Um erro simples pode virar um problema jurídico caro e inesperado.",
+    title: "Falhas operacionais constantes",
+    description: "Pequenos erros se acumulam e viram problemas recorrentes na rotina.",
   },
   {
     icon: UserX,

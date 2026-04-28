@@ -34,7 +34,7 @@ export function CondoComparison() {
                 <h3 className="text-xl font-heading font-bold text-zinc-900">Funcionário Próprio</h3>
               </div>
               <ul className="space-y-5">
-                {["Risco trabalhista alto", "Gestão complexa e morosa", "Sem substituição imediata"].map((item, i) => (
+                {["Cobertura instável da operação", "Gestão complexa e morosa", "Sem substituição imediata"].map((item, i) => (
                   <li key={i} className="flex gap-3 items-start">
                     <X className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                     <span className="text-zinc-600 leading-snug">{item}</span>
