@@ -66,7 +66,7 @@ export function CondoServices() {
             transition={{ delay: 0.2, duration: 0.4 }}
             className="text-text-secondary mt-4 max-w-xl mx-auto"
           >
-            Equipe treinada, postos cobertos e operação sem imprevistos — tudo sob gestão da BRD.
+            Equipe treinada, postos cobertos e operação sem imprevistos tudo sob gestão da BRD.
           </motion.p>
         </div>
 
